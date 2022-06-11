@@ -1,0 +1,369 @@
+{
+	"id": "e95197a2e1baeca6339d0623cbc93c43",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Lottery.sol": {
+				"content": "//SPDX-License-Identifier: GPL-3.0  \r\n\r\npragma solidity >=0.5 <=0.9;\r\n\r\ncontract Lottery{\r\n\r\n    uint participants_nol;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Lottery.sol": {
+				"Lottery": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Lottery.sol\":72:122  contract Lottery{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Lottery.sol\":72:122  contract Lottery{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212200c3319eeeabbf8663fc2eb6cad8ce5d222eab7d619155cdcdd580405e831723664736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200c3319eeeabbf8663fc2eb6cad8ce5d222eab7d619155cdcdd580405e831723664736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC CALLER NOT 0xEE 0xEA 0xBB 0xF8 PUSH7 0x3FC2EB6CAD8CE5 0xD2 0x22 0xEA 0xB7 0xD6 NOT ISZERO 0x5C 0xDC 0xDD PC DIV SDIV 0xE8 BALANCE PUSH19 0x3664736F6C6343000807003300000000000000 ",
+							"sourceMap": "72:50:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212200c3319eeeabbf8663fc2eb6cad8ce5d222eab7d619155cdcdd580405e831723664736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC CALLER NOT 0xEE 0xEA 0xBB 0xF8 PUSH7 0x3FC2EB6CAD8CE5 0xD2 0x22 0xEA 0xB7 0xD6 NOT ISZERO 0x5C 0xDC 0xDD PC DIV SDIV 0xE8 BALANCE PUSH19 0x3664736F6C6343000807003300000000000000 ",
+							"sourceMap": "72:50:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 72,
+									"end": 122,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212200c3319eeeabbf8663fc2eb6cad8ce5d222eab7d619155cdcdd580405e831723664736f6c63430008070033",
+									".code": [
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 72,
+											"end": 122,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Lottery.sol\":\"Lottery\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Lottery.sol\":{\"keccak256\":\"0x3e4949f4efacb68c6e6d17ebab52681f9c0418e82d115d5a0f24a18daa4063d3\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://0091f115cbd51701efb0878ae7f4f686b0296decf4cbcc5061de5d408cdcdf53\",\"dweb:/ipfs/QmSChebjhYN5YbKxZjiW5wcF5EkyrQdtX4okPKKcaB6iy4\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "Lottery.sol:Lottery",
+								"label": "participants_nol",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							}
+						],
+						"types": {
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Lottery.sol": {
+				"ast": {
+					"absolutePath": "Lottery.sol",
+					"exportedSymbols": {
+						"Lottery": [
+							4
+						]
+					},
+					"id": 5,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.5",
+								"<=",
+								"0.9"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:28:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 4,
+							"linearizedBaseContracts": [
+								4
+							],
+							"name": "Lottery",
+							"nameLocation": "81:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "participants_nol",
+									"nameLocation": "102:16:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 4,
+									"src": "97:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "97:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 5,
+							"src": "72:50:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:82:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
